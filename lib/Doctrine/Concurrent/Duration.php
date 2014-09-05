@@ -62,7 +62,7 @@ final class Duration
         $this->timeUnit = $timeUnit;
 
         if ($durationAmount < 0) {
-            throw new \IllegalArgumentException('Cannot specify a negative durationAmount.');
+            throw new \InvalidArgumentException('Cannot specify a negative durationAmount.');
         }
 
         $this->durationAmount = $durationAmount;
